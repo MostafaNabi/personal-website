@@ -1,15 +1,15 @@
 <template>
   <div>
     <div id="container">
-      <div id="background-color-wrapper">
-        <div id="profile-wrapper">
-          <div id="profile-picture-wrapper">
-            <img id="profile-picture" v-bind:src="profilePicture"/>
-          </div>
-          <div id="profile-text-wrapper">
-            <div id="profile-name"> Mostafa Nabi </div>
-            <div id="profile-description"> Short about me here </div>
-          </div>
+      <div id="profile-wrapper">
+        <div id="profile-picture-wrapper">
+          <router-link to="/" class="link">
+            <img id="profile-picture" v-bind:src="profilePicture" alt="profile picture"/>
+          </router-link>
+        </div>
+        <div id="profile-text-wrapper">
+          <div id="profile-name"> Mostafa Nabi </div>
+          <div id="profile-description"> Short about me here </div>
         </div>
       </div>
     </div>
@@ -34,27 +34,27 @@ export default {
     position: static;
     display: flex;
     height: 100%;
-    width: 300px;
+    width: 150px;
+    background-color: #212121;
   }
-
-  #background-color-wrapper {
-    width: 100%;
-    height: 300px;
-    background-color: #90CAF9;
-  }
-
   #profile-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+
+  #profile-text-wrapper {
+    color: white;
+    text-align: center;
   }
 
   #profile-picture {
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
   }
 
 </style>
