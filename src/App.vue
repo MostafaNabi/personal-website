@@ -1,29 +1,51 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div id="container">
+    <the-sidebar id="sidebar"/>
+    <div id="main">
+      <the-navbar id="navbar"/>
+      <router-view id="content"/>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import TheNavbar from '@/components/TheNavbar';
+import TheSidebar from '@/components/TheSidebar';
+export default {
+  name: 'App',
+  components: {
+    TheNavbar,
+    TheSidebar
   }
-}
+};
+</script>
+
+<style lang="scss">
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #dedede;
+  }
+</style>
+
+<style lang="scss" scoped>
+  #container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  #main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #content {
+    padding-left: 10px;
+  }
 </style>
