@@ -3,6 +3,7 @@
     <div id="main">
       <the-navbar id="navbar"/>
       <div id="main-body">
+        <the-content-menu id="menu"/>
         <router-view id="content"/>
         <the-profile-card id="profile"/>
       </div>
@@ -13,11 +14,13 @@
 <script>
 import TheNavbar from '@/components/TheNavbar';
 import TheProfileCard from '@/components/TheProfileCard';
+import TheContentMenu from '@/components/TheContentMenu';
 export default {
   name: 'App',
   components: {
     TheNavbar,
-    TheProfileCard
+    TheProfileCard,
+    TheContentMenu
   }
 };
 </script>
@@ -28,7 +31,6 @@ export default {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #dedede;
   }
 </style>
 
@@ -57,6 +59,12 @@ export default {
     justify-content: flex-end;
     height: 100%;
     width: 100%;
+  }
+
+  #menu {
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #content {

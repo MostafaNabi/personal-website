@@ -44,7 +44,7 @@
       </div>
 
       <div class="section-subtitle-wrapper">
-        <h4 class="section-subtitle"> STFC </h4>
+        <h3 class="section-subtitle"> STFC </h3>
       </div>
       <div class="section-content-wrapper">
         <p>
@@ -59,7 +59,7 @@
       </div> <!-- close stfc -->
 
       <div class="section-subtitle-wrapper">
-        <h4 class="section-subtitle"> ARM Holdings </h4>
+        <h3 class="section-subtitle"> ARM Holdings </h3>
       </div>
       <div class="section-content-wrapper">
         <p>
@@ -84,6 +84,10 @@ export default {
 
 <style lang="scss" scoped>
 
+#home-page-content {
+  background-color: white;
+}
+
 .section-title-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -95,5 +99,25 @@ export default {
 
 .section-title {
   margin: 0px;
+}
+
+.section-subtitle-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .section-subtitle {
+    color: gray;
+    margin-right: 10px;
+  }
+
+  .section-subtitle:hover {
+    color: skyblue;
+    cursor: pointer;
+
+    ::after {
+      content: "<i class='material-icons'>open_in_new</i>";
+    }
+  }
 }
 </style>
