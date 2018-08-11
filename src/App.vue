@@ -54,7 +54,7 @@ export default {
 
   #main-body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
   }
@@ -64,10 +64,8 @@ export default {
   }
 
   #profile {
-    position: absolute;
-    display: block;
-    right: 5%;
     margin-top: 15px;
-    margin-left: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 </style>
