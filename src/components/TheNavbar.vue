@@ -1,12 +1,10 @@
 <template>
   <div>
     <div id="navbar-wrapper">
+      <div id="cover-photo-wrapper">
+      </div>
       <div id="navbar-menu-wrapper">
         <div id="navbar-links">
-          <span class="link"> Skills </span>
-          <span class="link"> Work Experience </span>
-          <span class="link"> Projects </span>
-          <span class="link"> Education </span>
         </div>
       </div>
     </div>
@@ -14,12 +12,13 @@
 </template>
 
 <script>
-// import profilePicture from '@/assets/profile_picture.jpg';
-import DropdownMenu from '@/components/DropdownMenu';
+import coverPhoto from '@/assets/cover_photo.jpg';
 export default {
   name: 'TheNavbar',
-  components: {
-    DropdownMenu
+  data () {
+    return {
+      coverPhoto
+    };
   }
 };
 </script>
@@ -30,22 +29,16 @@ export default {
     background-color: white;
   }
 
-  #title {
-    margin-right: 20px;
-  }
-
-  #title-text {
-    font-size: 26px;
-    color: blue;
-  }
-
-  #profile-picture {
-    margin-right: 20px;
+  #cover-photo-wrapper {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: skyblue;
   }
 
   #navbar-wrapper {
-    display: flex;
-    align-items: center;
+    display: block;
   }
 
   #navbar-links {

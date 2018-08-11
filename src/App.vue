@@ -1,21 +1,23 @@
 <template>
   <div id="container">
-    <the-sidebar id="sidebar"/>
     <div id="main">
       <the-navbar id="navbar"/>
-      <router-view id="content"/>
+      <div id="main-body">
+        <router-view id="content"/>
+        <the-profile-card id="profile"/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import TheNavbar from '@/components/TheNavbar';
-import TheSidebar from '@/components/TheSidebar';
+import TheProfileCard from '@/components/TheProfileCard';
 export default {
   name: 'App',
   components: {
     TheNavbar,
-    TheSidebar
+    TheProfileCard
   }
 };
 </script>
@@ -43,9 +45,29 @@ export default {
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+  }
+
+  #navbar {
+    width: 100%;
+  }
+
+  #main-body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
 
   #content {
-    padding-left: 10px;
+    max-width: 50%;
+  }
+
+  #profile {
+    position: absolute;
+    display: block;
+    right: 5%;
+    margin-top: 15px;
+    margin-left: 15px;
   }
 </style>
