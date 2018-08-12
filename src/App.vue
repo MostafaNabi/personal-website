@@ -3,9 +3,7 @@
     <div id="main">
       <the-navbar id="navbar"/>
       <div id="main-body">
-        <the-content-menu id="menu"/>
         <router-view id="content"/>
-        <the-profile-card id="profile"/>
       </div>
     </div>
   </div>
@@ -31,6 +29,7 @@ export default {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    color: #333;
   }
 </style>
 
@@ -51,29 +50,34 @@ export default {
   }
 
   #navbar {
+    height: 10%;
+    min-height: 100px;
     width: 100%;
   }
 
   #main-body {
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
+    height: 90%;
     width: 100%;
   }
 
+/*
   #menu {
     margin-top: 15px;
     margin-left: 5%;
     margin-right: 5%;
   }
-
+*/
   #content {
-    max-width: 50%;
+    height: 100%;
+    width: 100%;
   }
+
+  /*
 
   #profile {
     margin-top: 15px;
     margin-left: 5%;
     margin-right: 5%;
   }
+  */
 </style>

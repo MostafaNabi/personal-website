@@ -1,10 +1,11 @@
 <template>
   <div>
     <div id="navbar-wrapper">
-      <div id="cover-photo-wrapper">
-      </div>
       <div id="navbar-menu-wrapper">
         <div id="navbar-links">
+          <span class="link"> About Me </span>
+          <span class="link"> Skills </span>
+          <span class="link"> Work Experience </span>
         </div>
       </div>
     </div>
@@ -25,40 +26,38 @@ export default {
 
 <style lang="scss" scoped>
   #navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
     width: 100%;
-    background-color: white;
-  }
-
-  #cover-photo-wrapper {
-    position: static;
-    display: block;
-    width: 100%;
-    height: 200px;
-    background-color: skyblue;
-  }
-
-  #navbar-wrapper {
-    display: block;
+    background-color: #587b7f;
   }
 
   #navbar-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;;
     align-items: center;
-    padding-left: 10px;
+    margin-bottom: 10px;
 
-    span {
-      margin-right: 10px;
+    .link {
       font-size: 24px;
+      text-decoration: underline;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-right: 1px solid white;
+    }
+
+    .link:last-child {
+      border-right: none;
+      padding-right: none;
+    }
+
+    .link:hover {
+      cursor: pointer !important;
+      color: #4eb8c4 !important;
     }
   }
 
-  .link {
-    text-decoration: none;
-  }
-
-  .link:hover {
-    cursor: pointer !important;
-    color: skyblue !important;
-  }
 </style>
