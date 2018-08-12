@@ -164,7 +164,8 @@ export default {
   }
 
   .tech-logo {
-    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-right: 1px solid #47a8b3;
   }
 
