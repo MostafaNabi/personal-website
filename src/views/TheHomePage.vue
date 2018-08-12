@@ -93,9 +93,9 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   height: 90%;
-  width: 100%;
   background-color: #efedec;
   border-bottom: 1px solid black;
+  padding: 0 10%;
 }
 
 .content-section:nth-child(odd) {
@@ -118,7 +118,7 @@ export default {
 .section-title {
   margin: 0px;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   text-decoration: underline;
 }
 
@@ -140,7 +140,7 @@ export default {
   }
 }
 .section-content-text {
-  font-size: 28px;
+  font-size: 1.5rem;
   max-width: 50%;
 }
 
