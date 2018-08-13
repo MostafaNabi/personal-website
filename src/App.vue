@@ -50,12 +50,17 @@ export default {
   }
 
   #navbar {
-    height: 10%;
-    min-height: 100px;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    min-height: 50px;
     width: 100%;
+    z-index: 1000;
   }
 
   #main-body {
+    position: absolute;
+    top: 50px;
     height: 90%;
     width: 100%;
   }

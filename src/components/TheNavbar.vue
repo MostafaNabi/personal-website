@@ -3,9 +3,9 @@
     <div id="navbar-wrapper">
       <div id="navbar-menu-wrapper">
         <div id="navbar-links">
-          <span class="link"> About Me </span>
-          <span class="link"> Skills </span>
-          <span class="link"> Work Experience </span>
+          <span class="link" v-on:click="scrollTo('about-me')"> About Me </span>
+          <span class="link" v-on:click="scrollTo('skills')"> Skills </span>
+          <span class="link" v-on:click="scrollTo('stfc')"> Work Experience </span>
         </div>
       </div>
     </div>
@@ -20,6 +20,18 @@ export default {
     return {
       coverPhoto
     };
+  },
+
+  methods: {
+    scrollTo (id) {
+      const offset = document.getElementById(id).offsetTop;
+      window.scroll({
+        top: offset,
+        behavior: 'smooth'
+      });
+
+      // window.scrollTo(0, offset);
+    }
   }
 };
 </script>

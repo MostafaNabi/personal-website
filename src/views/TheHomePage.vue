@@ -12,13 +12,9 @@
 
         <div class="section-content-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat.
-            Nulla pharetra diam sit amet nisl. Integer quis auctor elit sed. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Eu lobortis elementum nibh tellus molestie nunc.
-            Sed faucibus turpis in eu mi. Quis imperdiet massa tincidunt nunc pulvinar sapien et.
-            Netus et malesuada fames ac turpis egestas maecenas pharetra. Sagittis purus sit amet volutpat consequat mauris nunc.
-            Varius quam quisque id diam vel quam elementum. Ullamcorper eget nulla facilisi etiam dignissim.
-            Est ullamcorper eget nulla facilisi etiam. Gravida dictum fusce ut placerat orci nulla pellentesque.
-            Viverra vitae congue eu consequat ac felis.
+            Hello! I am a software developer living in Oxfordshire, I am currently working at Science and Technology Facilities Council (STFC) as graduate developer.
+            The role is very varied with work ranging from web development to system administration, I am currently looking to specialise in modern Web Development
+            and want to move back to my home town in Birmingham.
           </p>
         </div>
       </div>
@@ -31,13 +27,7 @@
       <div class="section-content-wrapper">
         <div class="section-content-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat.
-            Nulla pharetra diam sit amet nisl. Integer quis auctor elit sed. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Eu lobortis elementum nibh tellus molestie nunc.
-            Sed faucibus turpis in eu mi. Quis imperdiet massa tincidunt nunc pulvinar sapien et.
-            Netus et malesuada fames ac turpis egestas maecenas pharetra. Sagittis purus sit amet volutpat consequat mauris nunc.
-            Varius quam quisque id diam vel quam elementum. Ullamcorper eget nulla facilisi etiam dignissim.
-            Est ullamcorper eget nulla facilisi etiam. Gravida dictum fusce ut placerat orci nulla pellentesque.
-            Viverra vitae congue eu consequat ac felis.
+
           </p>
         </div>
 
@@ -63,7 +53,7 @@
       </div>
     </div> <!-- close skills -->
 
-    <div id="about-me" class="content-section">
+    <div id="stfc" class="content-section">
       <div class="section-title-wrapper">
         <h1 class="section-title"> Science and Technology Facilities Council </h1>
       </div>
@@ -72,14 +62,19 @@
           <carousel v-bind:images="['cover_photo.jpg', 'dafni-website-1.png', 'profile_picture.jpg']" />
         </div>
         <div class="section-content-text">
-           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat.
-            Nulla pharetra diam sit amet nisl. Integer quis auctor elit sed. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Eu lobortis elementum nibh tellus molestie nunc.
-            Sed faucibus turpis in eu mi. Quis imperdiet massa tincidunt nunc pulvinar sapien et.
-            Netus et malesuada fames ac turpis egestas maecenas pharetra. Sagittis purus sit amet volutpat consequat mauris nunc.
-            Varius quam quisque id diam vel quam elementum. Ullamcorper eget nulla facilisi etiam dignissim.
-            Est ullamcorper eget nulla facilisi etiam. Gravida dictum fusce ut placerat orci nulla pellentesque.
-            Viverra vitae congue eu consequat ac felis.
+          <p>
+            As part of the graduate training scheme we work on different projects every 6months to build broader knowledge.
+            My most notable project was DAFNI (Data Analytics for National Infrastructure).
+            The goal of DAFNI is to host all manners of data relating to infrastructure to allow researchers easy access to
+            datasets and to run their models on our HPC infrastructure. DAFNI is still in the early stages of its lifecycle,
+            my role within the project was to begin development on the DAFNI web platform, starting with data-catalogue,
+            an online catalogue displaying metadata on all datasets hosted by DAFNI.
+          </p>
+          <p>
+            Although joining the project as a graduate trainee, I was given a great deal of responsibility and freedom in developing the front-end.
+            For the majority of my 6months on this project I was the sole front-end developer and was given the freedom to choose the technology stack
+            and draw up the designs. I used Vue.js as my development framework (a framework similar to Angular) with SASS
+            for the styling and async/await and Promises for doing AJAX calls. I am using the Mocha, Chai and Sinon stack writing unit tests.
           </p>
         </div>
       </div>
