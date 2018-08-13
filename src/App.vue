@@ -61,7 +61,7 @@ export default {
   #main-body {
     position: absolute;
     top: 50px;
-    height: 90%;
+    height: 100%;
     width: 100%;
   }
 
